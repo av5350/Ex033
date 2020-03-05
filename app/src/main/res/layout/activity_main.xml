@@ -24,12 +24,13 @@
             android:layout_height="0px"
             android:layout_weight="20" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
+        <ImageButton
+            android:id="@+id/clearBtn"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#00FFFFFF"
-            app:srcCompat="@drawable/button_clear" />
+            app:srcCompat="@drawable/button_clear"
+            android:onClick="clear"/>
 
         <Space
             android:layout_width="match_parent"
@@ -37,7 +38,7 @@
             android:layout_weight="5" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/counterTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -51,7 +52,7 @@
             android:layout_weight="5" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/trueOrFalseTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -71,7 +72,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/firstNumberTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -81,7 +82,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/secNumberTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -98,36 +99,40 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton8"
+                android:id="@+id/smallBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#00FFFFFF"
-                app:srcCompat="@drawable/button_small" />
+                app:srcCompat="@drawable/button_small"
+                android:onClick="small"/>
 
             <ImageButton
-                android:id="@+id/imageButton7"
+                android:id="@+id/equalBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#00FFFFFF"
-                app:srcCompat="@drawable/button_equal" />
+                app:srcCompat="@drawable/button_equal"
+                android:onClick="equal"/>
 
             <ImageButton
-                android:id="@+id/imageButton6"
+                android:id="@+id/bigBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#00FFFFFF"
-                app:srcCompat="@drawable/button_big" />
+                app:srcCompat="@drawable/button_big"
+                android:onClick="big"/>
         </LinearLayout>
 
         <ImageButton
-            android:id="@+id/imageButton5"
+            android:id="@+id/pressBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#00FFFFFF"
-            app:srcCompat="@drawable/button_press_for_numbers" />
+            app:srcCompat="@drawable/button_press_for_numbers"
+            android:onClick="setNumbers"/>
 
         <Space
             android:layout_width="match_parent"
